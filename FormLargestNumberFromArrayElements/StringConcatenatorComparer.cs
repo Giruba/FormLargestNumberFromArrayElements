@@ -11,7 +11,9 @@ namespace FormLargestNumberFromArrayElements
         {
             string xy = x + y;
             string yx = y + x;
-            return yx.CompareTo(xy);
+            //Note that result if 1 is desc and -1 is asc
+            int result =  yx.CompareTo(xy);
+            return result;
         }
     }
 }
